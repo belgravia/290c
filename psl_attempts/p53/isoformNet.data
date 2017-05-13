@@ -1,0 +1,19 @@
+predicates:
+  Gene/1: closed
+  Interacts/2: closed
+  Map/2: closed
+  Transcript/1: closed
+  TTInteracts/2: open
+  Expression/2: closed
+  ExpressionBool/1: closed
+
+observations:
+  Gene : gene_obs.txt
+  Interacts : interacts_obs.txt
+  Map : gene_isoform.txt
+  Transcript: transcript_obs.txt
+  Expression: transcript_expr_log2_norm_rounded2.txt
+  ExpressionBool: transcript_obs_expr.txt
+
+targets: 
+  TTInteracts : ttinteracts_targets.txt
