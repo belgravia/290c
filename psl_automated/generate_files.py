@@ -89,4 +89,10 @@ call(['mv', prefix+'_gene_transcripts.txt', prefix+'/'+prefix+'_gene_transcripts
 call(['mv', prefix+'_transcripts_obs.txt', prefix+'/'+prefix+'_transcripts_obs.txt'])
 call(['mv', prefix+'_tt_interactions.txt', prefix+'/'+prefix+'_tt_interactions.txt'])
 call(['mv', prefix+'_transcript_expr_mean2.txt', prefix+'/'+prefix+'_transcript_expr_mean2.txt'])
+call(['mv', prefix+'_transcript_expr_mean1.txt', prefix+'/'+prefix+'_transcript_expr_mean1.txt'])
+call(['mv', prefix+'_transcript_expr.txt', prefix+'/'+prefix+'_transcript_expr.txt'])
+call(['mv', prefix+'_expression_bool.txt', prefix+'/'+prefix+'_expression_bool.txt'])
+
+
+
 
