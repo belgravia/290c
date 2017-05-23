@@ -1,0 +1,6 @@
+10: Interacts(G1, G2) & G1 != G2 & ExpressionBool(T1) & Map(G1,T1) & Map(G2, T2) & Expression(T1, E1) & Expression(T2, E1) -> TTInteracts(T1, T2) ^2
+
+5: Map(G1, T1) & Map(G2, T2) & G1 != G2 & ExpressionBool(T1) & Expression(T1, E1) & Expression(T2, E1) -> TTInteracts(T1, T2) ^2
+
+2: ~TTInteracts(T1, T2) ^2
+
