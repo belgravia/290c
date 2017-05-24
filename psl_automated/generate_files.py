@@ -80,6 +80,12 @@ with open(prefix+'_expression_bool.txt', 'wt') as outfile:  # expression bool
 		if exprvals2[i] != 0:
 			writer.writerow([transcripts[i]])
 
+with open(prefix+'_expression_bool1.txt', 'wt') as outfile:  # expression bool for 1 decimal point precision
+	writer = csv.writer(outfile, delimiter='\t')
+	for i in range(len(transcripts)):
+		if exprvals1[i] != 0:
+			writer.writerow([transcripts[i]])
+
 print('Generating pairwise transcript interaction targets')
 call(['python', 'dataProcessor.py', prefix+'_transcripts_obs.txt', prefix+'_tt_interactions.txt'])  # target file
 
