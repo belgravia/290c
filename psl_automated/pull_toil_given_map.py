@@ -9,9 +9,11 @@ except:
 	sys.exit(1)
 
 transcripts = set()
+transcripts_leftout = set()
 for line in mapfile:
 	line = line.rstrip().split('\t')
 	transcripts.add(line[1])
+	transcripts_leftout.add(line[1])
 
 num=0
 with open(outfilename, 'wt') as outfile:
@@ -26,6 +28,7 @@ with open(outfilename, 'wt') as outfile:
 		if line[0] in transcripts:
 			writer.writerow(line)
 			num += 1
+			transcripts_leftout.remove(line[0])
 print(num)
-
+sys.stderr.write(','.join(transcripts_leftout))
 

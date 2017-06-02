@@ -33,7 +33,11 @@ with open(outfilename, 'wt') as outfile:
 		# else:
 			writer.writerow(line + ['2'])  # ambiguous
 			stats[1] += 1
-		elif line[0] == vsetneg[(line[2],line[3])]:
+		elif (line[2],line[3]) in vsetneg and line[0] == vsetneg[(line[2],line[3])]:
 			writer.writerow(line + ['0'])  # wrong
 			stats[2] += 1
+		else:
+			writer.writerow(line + ['2'])
+			stats[1] += 1
 
+print(stats, 'right', 'ambiguous', 'wrong')
