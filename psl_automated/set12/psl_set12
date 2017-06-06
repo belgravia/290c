@@ -1,0 +1,6 @@
+10: Interacts(G1, G2) & G1 != G2 & IsExpressed(T1) & Map(G1, T1) & Map(G2, T2) & Mean(T1, E1) & Mean(T2, E1) -> TTInteracts(T1, T2) ^2
+
+5: Interacts(G1, G2) & G1 != G2 & IsExpressed(T1) & Map(G1,T1) & Map(G2, T2) & Correlation(T1, T2) -> TTInteracts(T1, T2) ^2
+
+2: ~TTInteracts(T1, T2) ^2
+

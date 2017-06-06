@@ -1,0 +1,21 @@
+predicates:
+  Gene/1: closed
+  Interacts/2: closed
+  Map/2: closed
+  Transcript/1: closed
+  TTInteracts/2: closed
+  Correlation/2: closed
+  IsExpressed/1: closed
+  Mean/2: closed
+
+observations:
+  Gene: set12_genes_obs.txt
+  Interacts: ../hundred_better
+  Map: set12_gene_transcripts.txt
+  Transcript: set12_transcripts_obs.txt
+  Correlation: set12_tt_cor_0d.txt
+  IsExpressed: set12_expression_bool.txt
+  Mean: set12_transcript_expr_mean1.txt
+
+targets: 
+  TTInteracts : set12_tt_interactions.txt
